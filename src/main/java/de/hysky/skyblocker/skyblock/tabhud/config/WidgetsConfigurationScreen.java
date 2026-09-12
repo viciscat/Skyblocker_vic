@@ -446,6 +446,7 @@ public class WidgetsConfigurationScreen extends Screen {
 		layer.editor().serializeConfig();
 		WidgetManager.SCREEN_BUILDER.hud().update();
 		this.minecraft.gui.setScreen(previousScreen);
+		WidgetManager.saveConfig();
 	}
 
 	public void removeWidget(PositionedWidget widget) {
